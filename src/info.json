@@ -1,0 +1,43 @@
+{
+  "identifier": "com.xlhuang.bubeinewword",
+  "version": "1.0.1",
+  "category": "translate",
+  "name": "不背生词本",
+  "summary": "查词的同时自动把单个英文单词加入不背单词（bbdc.cn）网页生词本，与 iPad / iPhone App 同步",
+  "author": "xlhuang",
+  "appcast": "https://github.com/xianlihuang/bob-plugin-bubei-newword/raw/main/appcast.json",
+  "minBobVersion": "1.8.0",
+  "options": [
+    {
+      "identifier": "cookie",
+      "type": "text",
+      "title": "不背单词 Cookie",
+      "textConfig": {
+        "type": "visible",
+        "height": 60,
+        "placeholderText": "登录 bbdc.cn 后，在浏览器开发者工具 Network 中复制请求头里的 Cookie 整行粘贴到这里"
+      },
+      "desc": "用于把单词加入网页生词本。Cookie 会过期，报「Cookie 已失效」时重新获取粘贴即可。"
+    },
+    {
+      "identifier": "autoAdd",
+      "type": "menu",
+      "title": "自动加入生词本",
+      "defaultValue": "on",
+      "menuValues": [
+        { "title": "开启（查词即收录）", "value": "on" },
+        { "title": "关闭（仅查词，不收录）", "value": "off" }
+      ]
+    },
+    {
+      "identifier": "scope",
+      "type": "menu",
+      "title": "收录范围",
+      "defaultValue": "word",
+      "menuValues": [
+        { "title": "仅单个英文单词", "value": "word" },
+        { "title": "任意内容（查不到则跳过）", "value": "any" }
+      ]
+    }
+  ]
+}

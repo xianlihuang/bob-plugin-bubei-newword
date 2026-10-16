@@ -1,0 +1,13 @@
+{
+  "identifier": "com.xlhuang.bubeinewword",
+  "versions": [
+    {
+      "version": "1.0.1",
+      "desc": "首个公开发布：查词时自动把单词加入不背单词生词本；修复 Bob 1.21 报「插件未实现 translate 方法」的兼容问题。",
+      "sha256": "6465646ea404d8214813e774b9f261507db0435c9f65e3cc92370521054249d9",
+      "url": "https://github.com/xianlihuang/bob-plugin-bubei-newword/releases/download/v1.0.1/bubei-newword-v1.0.1.bobplugin",
+      "minBobVersion": "1.8.0",
+      "timestamp": 1792119892534
+    }
+  ]
+}
